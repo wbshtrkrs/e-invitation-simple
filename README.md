@@ -1,5 +1,5 @@
 # E-Invitation-Simple ReadMe
-> A curated list of E-Invitation-Simple READMEs
+> A description of E-Invitation-Simple READMEs
 
 <p align="left">
   <p align="left">
