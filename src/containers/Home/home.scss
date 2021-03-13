@@ -1,0 +1,72 @@
+.font-a-b{
+  font-family: "AppleGaramond-Bold";
+}
+.font-a-b-i{
+  font-family: "AppleGaramond-BoldItalic";
+}
+.font-m-r{
+  font-family: "Montserrat-Regular";
+}
+.font-m-b{
+  font-family: "Montserrat-Bold";
+}
+.font-m-m{
+  font-family: "Montserrat-MediumItalic";
+}
+
+.container {
+  padding-top: 3rem;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.container-content{
+  margin: 3rem auto;
+  width: 80%;
+  text-align: center;
+}
+
+.container-quote{
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 80%;
+  text-align: center;
+}
+
+.banner{
+  background-color: grey;
+  margin: 0 auto;
+  width: 80%;
+  height: 50vh
+}
+
+.couple{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-left: 30%;
+  margin-right: 30%;
+
+  .sign{
+    margin-top: 7pt;
+  }
+
+  .bride-groom{
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .couple{
+    display: block;
+    justify-content: space-between;
+    margin: 3rem auto;
+    width: 80%;
+
+    .sign{
+      text-align: center;
+    }
+  }
+}
