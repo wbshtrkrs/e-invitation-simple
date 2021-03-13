@@ -22,4 +22,4 @@ Project Link: [https://github.com/andresetiawan-as/e-invitation-simple](https://
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See `LICENSE` for more information. 
