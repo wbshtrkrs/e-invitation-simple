@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from 'react';
+import React, { useEffect, useState, createRef} from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../redux/Home/action'
 import './home.scss'
@@ -13,12 +13,41 @@ import{
 } from '../../asset'
 
 const Home = (props) => {
+    const [showVideo, setShowVideo] = useState(false);
+    const container = createRef();
+
+    const onVideoIntersection = (entries) => {
+        debugger
+        if (!entries || entries.length <= 0) {
+            return;
+        }
+
+        if (entries[0].isIntersecting) {
+            setShowVideo(true);
+            videoObserver.disconnect();
+        }
+    }
+
+    const videoObserver = new IntersectionObserver(onVideoIntersection, {
+        rootMargin: '200px 0px',
+        threshold: 0.25
+    });
 
     useEffect(() => {
+        if (window && 'IntersectionObserver' in window) {
+            debugger
+            if (container && container.current) {
+                videoObserver.observe(container.current);
+            }
+        } else {
+            setShowVideo(true);
+        }
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         return () => {
             
         }
-    }, [])
+    }, [container])
 
     return(
         <div>
@@ -62,6 +91,7 @@ const Home = (props) => {
                                 className="image"
                                 src={foto2}
                                 loading="lazy"
+                                alt="Legend and Renata"
                             />
                         </div>
                         <div className="image-content">
@@ -69,6 +99,7 @@ const Home = (props) => {
                                 className="image"
                                 src={foto3}
                                 loading="lazy"
+                                alt="Legend and Renata"
                             />
                         </div>
                         <div className="image-content">
@@ -76,6 +107,7 @@ const Home = (props) => {
                                 className="image"
                                 src={foto4}
                                 loading="lazy"
+                                alt="Legend and Renata"
                             />
                         </div>
                 </div>
@@ -83,15 +115,19 @@ const Home = (props) => {
             <div className="container-content font-m-r">
                 <Fade top><h1>Live Streaming</h1></Fade>
             </div>
-            <div className="cotainer-video">
-                <iframe
-                    title="Legend and Renata"
-                    className="video"
-                    src="https://www.youtube.com/embed/KM1jkox1QSI"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen="allowFullScreen">
-                </iframe>
+            <div ref={container} className="cotainer-video">
+            {
+                showVideo ? 
+                    <iframe
+                        title="Legend and Renata"
+                        className="video"
+                        src="https://www.youtube.com/embed/KM1jkox1QSI"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen="allowFullScreen">
+                    </iframe>
+                : null
+            }
             </div>
             <div className="container-quote font-m-m">
                 <HeadShake  >
