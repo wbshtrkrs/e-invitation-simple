@@ -15,7 +15,7 @@
 <!-- CONTACT -->
 ## Contact
 
-Andre Setiawan - [Twitter](https://twitter.com/andrestwn_as) - [Mail](andresetiawan.info@gmail.com) - [LinkedIn](https://linkedin.com/in/andresetiawan/)
+Andre Setiawan - [Twitter](https://twitter.com/andrestwn_as) - [Mail](mailto:andresetiawan.info@gmail.com) - [LinkedIn](https://linkedin.com/in/andresetiawan/)
 andresetiawan.info@gmail.com
 
 Project Link: [https://github.com/andresetiawan-as/e-invitation-simple](https://github.com/andresetiawan-as/e-invitation-simple)
