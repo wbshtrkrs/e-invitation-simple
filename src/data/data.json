@@ -7,7 +7,7 @@
         "bride": "Bride",
         "groomName": "John Legend Valuable",
         "brideName": "Leni Kristina Renata",
-        "desription": "Request the honor of your presence on their <b>Holy Matrimony and Reception virtual</b>",
+        "desription": "Request the honor of your presence on their Holy Matrimony and Reception virtual",
         "quotation1": "We're getting hitched! And we'd be delighted if you could join our virtual wedding!"
     },
     "location":{
@@ -17,7 +17,7 @@
     "moment":{
         "holyMatrimonyDate": "22 FEBUARY 2021",
         "receptionDate": "22 FEBUARY 2021",
-        "holyMatrimonyTime": "10.00 - 12.00",
-        "receptionTime": "19.00 - finish" 
+        "holyMatrimonyTime": "10.00 AM",
+        "receptionTime": "13.00 PM" 
     }
 }
