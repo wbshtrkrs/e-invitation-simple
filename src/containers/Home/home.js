@@ -30,6 +30,7 @@ const Home = (props) => {
                     className="image"
                     src={foto1}
                     loading="lazy"
+                    alt="Legend and Renata"
                 />
             </div>
             <div className="couple">
@@ -84,6 +85,7 @@ const Home = (props) => {
             </div>
             <div className="cotainer-video">
                 <iframe
+                    title="Legend and Renata"
                     className="video"
                     src="https://www.youtube.com/embed/KM1jkox1QSI"
                     frameBorder="0"
