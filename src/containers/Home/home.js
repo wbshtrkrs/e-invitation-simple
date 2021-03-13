@@ -66,14 +66,18 @@ const Home = (props) => {
                 <div className="bride-groom font-a-b">
                     <Fade left>
                         <h1>{data.couple.groomName}</h1>
-                        <h3 className="font-m-r">{data.couple.groom}</h3>
+                        <section>
+                            <h3 className="font-m-r">{data.couple.groom}</h3>
+                        </section>
                     </Fade>
                 </div>
                 <Zoom><h3 className="sign font-a-b">&</h3></Zoom>
                 <div className="bride-groom font-a-b">
                     <Fade right>
                         <h1>{data.couple.brideName}</h1>
-                        <h3 className="font-m-r">{data.couple.bride}</h3>
+                        <section>
+                            <h3 className="font-m-r">{data.couple.bride}</h3>
+                        </section>
                     </Fade>
                 </div>
             </div>
@@ -81,7 +85,9 @@ const Home = (props) => {
                 <Fade top>
                     <h3>{data.couple.desription}</h3>
                     <h1 className="font-m-b">{data.moment.holyMatrimonyDate}</h1>
-                    <h3>{data.moment.holyMatrimonyTime} for Holy Matrimony & {data.moment.receptionTime} for Reception</h3>
+                    <section>
+                        <h3>{data.moment.holyMatrimonyTime} for Holy Matrimony & {data.moment.receptionTime} for Reception</h3>
+                    </section>
                 </Fade>
             </div>
             <Zoom>
